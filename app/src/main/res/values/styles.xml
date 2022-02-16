@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="myDialogThemePrior_0" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:background" >#ffffff</item>
+        <item name="android:background" >@color/white</item>
     </style>
     <style name="myDialogThemePrior_1" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:background" >#007f0e</item>
+        <item name="android:background" >@color/green</item>
     </style>
     <style name="myDialogThemePrior_2" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:background" > #ffd800</item>
+        <item name="android:background" > @color/yellow</item>
     </style>
     <style name="myDialogThemePrior_3" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:background" >#dc0000</item>
+        <item name="android:background" >@color/red</item>
     </style>
 </resources>
