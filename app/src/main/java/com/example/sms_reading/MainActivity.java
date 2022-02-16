@@ -5,6 +5,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.Manifest;
@@ -42,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.fragmentContainerView2);
         ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.READ_SMS}, PackageManager.PERMISSION_GRANTED);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
-
+        AppBarConfiguration appconfig = new AppBarConfiguration.Builder(R.id.first_frag, R.id.second_frag).build();
+        NavigationUI.setupActionBarWithNavController(this, navController, appconfig);
         thread = new Thread(new Runnable() {
             @Override
             public void run() {
